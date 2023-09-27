@@ -27,12 +27,14 @@ SET time_zone = "+00:00";
 -- Table structure for table `control`
 --
 
+use a0ynjpp42dcgrgjq;
+
 CREATE TABLE `control` (
   `id` bigint(20) NOT NULL,
   `date_control` datetime DEFAULT NULL,
   `etat` bit(1) DEFAULT NULL,
   `control_point_id` bigint(20) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_mysql500_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 
@@ -44,7 +46,7 @@ CREATE TABLE `control_ckeck_point` (
   `id` bigint(20) NOT NULL,
   `range_level` double DEFAULT NULL,
   `type` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_mysql500_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 
@@ -58,7 +60,7 @@ CREATE TABLE `enseignants` (
   `last_name` varchar(255) DEFAULT NULL,
   `matricule` varchar(255) NOT NULL,
   `status_id` bigint(20) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_mysql500_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 
@@ -75,7 +77,7 @@ CREATE TABLE `etudiants` (
   `montant_pay` varchar(255) DEFAULT NULL,
   `total_pension` varchar(255) DEFAULT NULL,
   `status_id` bigint(20) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_mysql500_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 
@@ -85,7 +87,7 @@ CREATE TABLE `etudiants` (
 
 CREATE TABLE `hibernate_sequence` (
   `next_val` bigint(20) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_mysql500_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `hibernate_sequence`
@@ -121,7 +123,7 @@ CREATE TABLE `pointage_etudiant` (
   `get_time_out5` time DEFAULT NULL,
   `type` int(11) DEFAULT NULL,
   `etudiant_id` bigint(20) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_mysql500_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 
@@ -144,7 +146,7 @@ CREATE TABLE `pointage_professeur` (
   `get_time_out5` time DEFAULT NULL,
   `type` int(11) DEFAULT NULL,
   `enseignant_id` bigint(20) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_mysql500_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 
@@ -155,7 +157,7 @@ CREATE TABLE `pointage_professeur` (
 CREATE TABLE `statut` (
   `id` bigint(20) NOT NULL,
   `name` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_mysql500_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Indexes for dumped tables
