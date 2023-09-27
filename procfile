@@ -1,1 +1,1 @@
-web: java -jar gestionScolarite-jar.jar
+web: java -jar target/school.jar
